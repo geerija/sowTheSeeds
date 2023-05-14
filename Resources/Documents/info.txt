@@ -1,0 +1,20 @@
+/***********FONT FAMILY*************/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+font-family: 'Merriweather', serif;
+/**************COLORS USED********************/
+-background:#e9ecef;
+
+1.Sections for the landing page
+-Navbar section
+-hero Section
+-Products display Section
+-Why choose us Section
+-Customer review Section
+-call to action Section
+-images Itinerary
+-footer section
+
+
+
+
