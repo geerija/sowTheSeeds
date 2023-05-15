@@ -5,25 +5,39 @@
   box-sizing: border-box;
 }
 body {
-  width: 100%;
+  /* width: 100%;
   height: 100vh;
-  background-color: #e9ecef;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Resources/images/header.jpg");
+  background-size: cover; */
   font-family: "Merriweather", serif;
   font-weight: 400;
+  color: #000;
 }
 /*Navbar section*/
+main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Resources/images/header.jpg");
+  background-size: cover;
+}
 .navbar {
-  margin: 2rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.right,
+.left {
+  cursor: pointer;
+}
 .logo_img {
-  width: 220px;
+  width: 210px;
 }
 .menu_list {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   list-style: none;
   display: flex;
 }
@@ -32,16 +46,12 @@ body {
 }
 .menu_list li a {
   text-decoration: none;
-  color: #000;
-}
-.menu_list li a {
   padding: 0.8rem 1rem;
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 .menu_list li a:hover {
   background-color: #174a20;
-  color: #fff;
   border-radius: 10px;
 }
 /*HERO section*/
@@ -53,16 +63,13 @@ body {
   color: #fff;
 }
 .hero_items {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../Resources/images/header.jpg");
-  background-size: cover;
   border-radius: 10px;
   width: 900px;
   height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 5rem;
+  padding-top: 6rem;
   /* justify-content: center; */
 }
 .hero_items .tag-line {
@@ -84,6 +91,7 @@ body {
   width: 600px;
   font-size: 1.5rem;
   border-radius: 30px;
+  cursor: pointer;
 }
 .hero_items div button {
   outline: none;
@@ -93,8 +101,157 @@ body {
   border-radius: 50%;
   margin-left: 1rem;
   background-color: #fff;
+  cursor: pointer;
 }
 .hero_items div button .icons {
   width: 24px;
   height: 24px;
+}
+/*Products glims*/
+.products_show {
+  background: #e9ecef;
+}
+.heading {
+  margin: 2rem;
+  display: inline-block;
+  background-color: #174a20;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 20px;
+}
+.product_display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.plants_div {
+  background-color: #ced4da;
+  border-radius: 10px;
+}
+.plants_div,
+.see-more {
+  margin: 3rem;
+  padding: 1rem;
+  width: 400px;
+  height: 400px;
+}
+.product_display .see-more {
+  font-size: 3rem;
+  border: none;
+}
+.product_display .see-more button {
+  outline: none;
+  border: none;
+  padding: 0.8rem 2rem;
+  background-color: #adb5bd;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product_display .see-more button:hover {
+  background-color: #ced4da;
+}
+
+.plants_div img {
+  width: 100%;
+  height: 260px;
+  border-radius: 15px;
+}
+.plants_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.plants_info button {
+  width: 54px;
+  height: 54px;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.icon {
+  width: 44px;
+  height: 44px;
+}
+.plants_div div {
+  background-color: #adb5bd;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  text-align: center;
+  border-radius: 20px;
+}
+/*why choose us Section*/
+.why {
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.headings {
+  padding-top: 5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #174a20;
+  text-decoration: underline;
+}
+.reason_why_list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.reason_why_list li {
+  margin: 4rem;
+  max-width: 400px;
+  padding: 2rem 1rem;
+  font-size: 1.7rem;
+}
+.reason_why_list li img {
+  margin: 0 5rem;
+  width: 100px;
+  height: 100px;
+}
+/*featured in section*/
+.featured_in {
+  background-color: #e9ecef;
+  padding-bottom: 2rem;
+}
+.featured_in_list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+.featured_in_list li img {
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  width: 300px;
+  opacity: 0.6;
+  filter: grayscale(100%);
+}
+/*customer gallery*/
+.gallery {
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.photos_grid_list {
+  margin-top: 4rem;
+  list-style: none;
+  display: grid;
+  column-gap: 0.5rem;
+  row-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.photos_grid_list li img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
 }
