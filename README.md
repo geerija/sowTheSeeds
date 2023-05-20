@@ -19,7 +19,7 @@ Navigate to the project directory:
 shell
 Copy code
 cd sowTheSEEDS
-Open the index.html file in your preferred web browser.
+Open the home.html file in your preferred web browser.
 
 That's it! You're now ready to explore the sowTheSEEDS website on your local machine.
 
