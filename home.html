@@ -14,19 +14,19 @@
         <div class="right">
           <nav>
             <ul class="menu_list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Gardening guide</a></li>
-              <li><a href="#"> About Us</a></li>
+              <li><a href="#" class="home">Home</a></li>
+              <li><a href="#" class="product">Products</a></li>
+              <li><a href="#" class="guide">Gardening guide</a></li>
+              <li><a href="#" class="about">About Us</a></li>
             </ul>
           </nav>
         </div>
         <div class="left">
           <nav>
             <ul class="menu_list">
-              <li><a href="#">Login</a></li>
+              <li><a href="#" class="login">Login</a></li>
               <li>
-                <a href="#"
+                <a href="#" class="mycart"
                   >MyCart <ion-icon class="icons" name="cart-outline"></ion-icon
                 ></a>
               </li>
@@ -50,6 +50,7 @@
         <!-- <img src="../Resources/images/header.jpg" class="hero_img" alt="" /> -->
       </section>
     </main>
+    <!-- Products section -->
     <section class="products_show">
       <div class="heading">
         <h2>Our Products</h2>
@@ -57,10 +58,10 @@
       <div class="product_display">
         <div class="see-more">
           <p>Our Best Seller Products</p>
-          <button>
+          <a href="" class="see_more_btn">
             See More
             <ion-icon class="icons" name="arrow-forward-outline"></ion-icon>
-          </button>
+          </a>
         </div>
         <div class="plants_div">
           <img
@@ -226,6 +227,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="../JS/script.js"></script>
+    <script src="../JS/Home_script.js"></script>
   </body>
 </html>

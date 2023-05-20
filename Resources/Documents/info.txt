@@ -4,7 +4,7 @@
 font-family: 'Merriweather', serif;
 /**************COLORS USED********************/
 -background:#e9ecef;
-
+-section heading :#174a20
 1.Sections for the landing page
 -Navbar section
 -hero Section

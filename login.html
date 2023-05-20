@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/login.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h3>Sign in</h3>
+        <div class="login">
+          <form
+            action="/Products.html"
+            id="loginvalidate"
+            name="loginForm"
+            method="post"
+          >
+            Email:
+            <input
+              type="email"
+              autofocus
+              class="field fieldEmail"
+              name="EmailForm"
+            />
+            <br />
+            Password:
+            <input type="password" class="field fieldPw" name="PwForm" /><br />
+            <input
+              type="submit"
+              value="Submit
+            "
+              class="login_btn"
+            />
+          </form>
+        </div>
+        <div class="sign_up">
+          <p>
+            Don't have an Account?
+            <a href="../HTML/signup.html" class="link_sign_up">Sign-up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="../JS/login_script.js"></script>
+  </body>
+</html>
